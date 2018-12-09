@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="css/cousrse.css">
+    <script src="./js/course.js"></script>
+
+</head>
+<body>
+<div class="login-com">
+    <div class="login-box">
+        <div class="login-text">
+            <h5>寓文网 </h5>
+            <h3>X</h3>
+        </div>
+
+        <dl>
+            <dt>
+                <input type="text" id="txtName" placeholder="用户名">
+            </dt>
+            <dt>
+                <input type="password" id="txtPassword" placeholder="密码">
+            </dt>
+            <dt>
+                <input type="button" id="btnLogin" value="登录">
+            </dt>
+        </dl>
+    </div>
+</div>
+<div class="header-container">
+    <div class="logo">
+        <a href="/">
+            <img src="./images/logo4.jpg">
+        </a>
+    </div>
+    <div class="header-menu">
+        <ul>
+            <li><a class="menu-active" href="/">首页</a></li>
+            <li><a href="/course_search.html" class="show-course">课程</a></li>
+            <li><a href="/Notice">公告</a></li>
+            <li><a href="/Teacher">名师</a></li>
+            <li><a id="lnkActivity">评比活动</a></li>
+        </ul>
+    </div>
+    <div class="header-search">
+        <select>
+            <option value="1">课程</option>
+            <option value="2">教师</option>
+        </select>
+        <input class="search-kw" type="text" placeholder="输入课程名称......" value="">
+        <a class="serach-action">
+        </a>
+    </div>
+    <div class="user-action">
+        <a class="login" href="#">登录</a>
+        <span>|</span>
+        <a class="register" href="#">注册</a>
+    </div>
+    <div class="user-out">
+       Welecome <span class="userName"></span>
+        <span>|</span>
+        <a class="loginOut" href="#">注销</a>
+    </div>
+</div>
+<div>
+    <div class="banner" >
+        <ul class='solider'>
+            <li><img src="./images/banner.png" id='first'/></li>
+            <li><img src="./images/banner.png"/></li>
+        </ul>
+        <ul class="buttons ">
+            <li class="active"><span index="1"></span></li>
+            <li><span index="2"></span></li>
+        </ul>
+
+        <ul class="nav">
+            <li><a href="#" class="a_item1">小学3-4年级</a></li>
+            <li><a href="#" class="a_item2">小学5-6年级</a></li>
+            <li><a href="#" class="a_item3">小升初</a></li>
+            <li><a href="#" class="a_item4">初中</a></li>
+            <li><a href="#" class="a_item5">冲刺中考</a></li>
+            <li><a href="#" class="a_item6">高中</a></li>
+            <li><a href="#" class="a_item7">备战高考</a></li>
+        </ul>
+    </div>
+
+</div>
+</div>
+<div class="course-box">
+    <div class="course-header">
+        <p>
+            <span class="course-live">热门直播</span>
+            <span class="course-title">popular live</span>
+            <a href="/Course">更多&gt;&gt;</a>
+        </p>
+    </div>
+
+    <hr></hr>
+    <div class="middle">
+       <!-- <ul class="couse-list">
+            <li>
+                <a href="#">
+                    <img src="./images/20180919132912298.jpg" alt="">
+                    <p>
+                        <span class="course-name">小学5-6年级|如何写好记叙文</span>
+                        <span class="course-end">已结束</span>
+                    </p>
+                    <p class="course-price">
+                        <span>￥280.00</span><del>￥280.00</del>
+                        <span class="study-num">已报名6人</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/20180919132912298.jpg" alt="">
+                    <p>
+                        <span class="course-name">小学5-6年级|如何写好记叙文</span>
+                        <span class="course-end">已结束</span>
+                    </p>
+                    <p class="course-price">
+                        <span>￥280.00</span><del>￥280.00</del>
+                        <span class="study-num">已报名6人</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/20180919132912298.jpg" alt="">
+                    <p>
+                        <span class="course-name">小学5-6年级|如何写好记叙文</span>
+                        <span class="course-end">已结束</span>
+                    </p>
+                    <p class="course-price">
+                        <span>￥280.00</span><del>￥280.00</del>
+                        <span class="study-num">已报名6人</span>
+                    </p>
+                </a>
+            </li>-->
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-title">
+        <p><span>寓乐湾旗下创意写作在线学习平台</span></p>
+        <p><span>Copyright ©2013 寓乐湾 All Rights Reserved</span><span> 京ICP备13003015号-1</span> </p>
+        <p><a href="/About" target="_self">关于我们</a> | <a href="/About?Flag=3" target="_self">联系我们</a></p>
+        <p>友情链接： <a href="#" >寓乐湾</a> </p>
+    </div>
+</div>
+<div class="course-video">
+    <p class="close">X</p>
+    <video controls  preload id="video">
+        <source src="http://127.0.0.1:3000/video/course.mp4" type="video/mp4">
+    </video>
+</div>
+</body>
+</html>

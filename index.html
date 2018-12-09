@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name='viewport' content="width=device-width,initial-scale=1.0">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>寓乐湾</title>
+  <link rel="stylesheet" href="css/style_main.css">
+  <script src='js/common.js'></script>
+ <script src='js/jquery-1.11.3.js'></script>
+ <script src='js/index.js'></script>
+	 <script src='js/index_new.js'></script>
+<style type="text/css">
+ul{
+list-style:none;
+}
+.buttons{position:absolute; bottom:50px; left:45%; z-index:100;}
+.buttons li{float:left; margin-right:10px;}
+.buttons li span{display:block; width:10px; height:10px; border-radius:50%; background:#fff; cursor:pointer;}
+.buttons li.active span{background:#f00;}
+.ctrl_new{
+        width:100%;
+        height:60px;
+        position: absolute;
+        left:0;
+    }
+  .ctrl_new button{
+           width: 40px;
+    height: 82px;
+    background: #ccc;
+    color: #FFF;
+    border: 0;
+    outline: none;
+    opacity: 0.5;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 10%;
+    }
+    .ctrl_new .prev_new{
+        float:left;
+        margin-left:10px;
+    }
+    .ctrl_new .next_new{
+        float:right;
+        margin-right:10px;
+    }
+	.my_left{
+	position:fixed	;
+	top:50%;
+	right:0;
+	z-index:2
+	}
+	.close{
+	position:absolute	;
+	top:56%;
+	left:-15.6%;
+	z-index:2;
+	cursor:pointer;
+	}
+	#left_a{
+	width:148px;
+	background:rgb(41,104,175)
+	}
+#left_a a{
+width:70px;
+display:block;
+border:1px solid white;
+border-radius: 30px;
+font-size:10px;;
+text-align:center;
+margin:0 auto;
+background: rgb(193,218,244);
+color:rgb(51,144,160);
+background-image:url('./images/icon.png');
+background-position: -400px 6px;
+}
+  </style>
+ </head>
+ <body>
+  <div class='my_left'>
+	 <div  id='open'>
+			<img src="./images/14 .png" alt="" />
+			<img src="./images/14_left.png" alt="" class='close'/>
+		<div id='left_a'>
+			<a href="#">门店加盟</a>
+			<a href="#">校内装备</a>
+			</div>
+	</div>
+		<div id='close' style='display:none'>
+				<img src="./images/14_close.png" alt="" />
+		</div>
+	  </div>
+	 </div>
+ <!--头部导航布局-->
+	<div id='table'>
+			  <div id='logo'>
+				 <img src="./images/logo.png" alt="" >
+			  </div>
+			<nav  id='nav_right'>
+			<ul class='nav_one' >
+			<li id='q1'><a href="#" class='index'>首页</a></li>	
+			<li>
+			<a href="#" class="a_item0" >关于我们</a>
+			<div class="down_menu" style='display:none'>  
+				<div class="down_menu_block" >
+					<div class="nav_class">
+						<a href="#" >公司简介</a>
+						<a href="#" >发展历程</a>
+						<a href="#" >合作伙伴</a>
+						<a href="#" >中国创客教育联盟</a>
+						<a href="#" >国际创客教育研究院</a>
+						<a href="#" >联系我们</a> 	
+						</div>
+						<p class="f28 tel_400"><img src="images/ico_02.png" width="44" height="44" alt="">400-870-8068</p>
+					</div> 
+				</div>
+			</li>
+			<li><a href="#" class="a_item0">新闻中心</a></li>
+			<li>
+			<a href="#" class="a_item0">产品课程</a>
+			<div class="down_menu"style='display:none'>  
+				<div class="down_menu_block">
+					<div class="nav_class">
+						<a href="#" class="a_item1" data-toggle="#item1">校外业务</a>
+						<a href="#" class="a_item1" data-toggle="#item2">校内业务</a>
+						<a href="#" class="a_item1" data-toggle="#item3">steam平台</a>
+						<span class="nav_class_one " id='item1' style='display:none'>
+							<a href="#">寓乐湾科技体验中心</a>
+							<a href="#">寓乐优学</a>
+						</span>
+						<span class="nav_class_one " id='item2' style='display:none'>
+							<a href="#">科技创新实验室</a>
+							<a href="#">校园创客空间</a>
+							<a href="#">幼儿科学发展与探究实训室</a>	
+							<a href="#">校外教育基地</a>	
+							<a href="#">课外增值业务</a>	
+						</span>
+						<span class="nav_class_one " id='item3' style='display:none'>
+							<a href="#">青少年STEAM平台云</a>
+							<a href="#">STEAM智能云课程</a>
+						</span>
+						
+						<a href="#" class="a_item1" data-toggle="#item4">青少年智能云测评平台</a>
+						<a href="#" class="a_item1" data-toggle="#item5">师资培训</a>
+						<a href="#" class="a_item1" data-toggle="#item6">家庭业务</a> 
+						<a href="#" class="a_item1" data-toggle="#item7">赛事活动</a> 
+						<span class="nav_class_one " id='item7' style='display:none'>
+							<a href="#">APAR亚太青少年科技创新大赛</a>
+							<a href="#">创意写作</a>
+							<a href="#">研学银行</a>
+						</span>
+						</div>
+						<p class="f28 tel_400"><img src="images/ico_02.png" width="44" height="44" alt="">400-870-8068</p>
+					</div> 
+				</div>
+			</li>	
+			<li><a href="#" class="a_item0">招商加盟</a></li>
+			<li><a href="#" class="a_item0">APAR大赛</a></li>	
+			<li><a href="#" class="a_item0">STEAM平台</a>
+			<div class="down_menu " style='display:none'>  
+				<div class="down_menu_block" >
+					<div class="nav_class">
+						<a href="#" class="a_item1">steam平台</a>
+						<a href="#" class="a_item1">Steam云平台</a>	
+						</div>
+						<p class="f28 tel_400"><img src="images/ico_02.png" width="44" height="44" alt="">400-870-8068</p>
+			</li>	
+			<li><a href="#">名师团队</a></li>	
+			<li><a href="#">各地分校</a></li>
+			<li><a href="#">招贤纳士</a></li>	
+			<li id='li_10'>|</li>
+			<li ><span id='tel'>400-870-8068</span></li>
+			</ul>	
+		</nav>
+		</header>
+		<div class="banner" >
+		   <ul class='solider'>
+			 <li><img src="./images/1.jpg" id='first'/></li>
+			 <li><img src="./images/2.jpg"/></li>
+			 <li><img src="./images/3.jpg"/></li>
+			 <li><img src="./images/4.jpg" id='last'></li>
+			</ul>
+	<ul class="buttons ">
+            <li class="active"><span index="1"></span></li>
+            <li><span index="2"></span></li>
+            <li><span index="3"></span></li>
+            <li><span index="4"></span></li>
+        </ul>
+		</div>
+		<span class="order">
+            <!-- <i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i> -->   
+    </span>
+    <div class="ctrl">
+        <button title="上一张" class="prev"><</button>
+        <button title="下一张" class="next">></button>
+    </div>
+
+	
+	</div>
+
+<!--about上部布局-->
+<div class='body_about'>
+		<div class='body_about_right' >
+		<a href="#"><span id='about_sp'><img src="images/load_ico01.png" alt="">视频下载 ></span></a> 
+		</div>
+		<div class='body_about_left'>
+			<a href="#"><span id='about_sp'><img src="images/load_ico02.png" alt="">手册下载 ></span></a> 
+		</div>
+	</div>
+  <div class='middle'>
+  <div class='about'>
+	<div id='about_wz'>
+		  <a href="#" id='about_us'>About us</a>
+		  <span>关于我们</span>
+		  <p class='js'>公司介绍</p>
+		  <p>北京寓乐世界教育科技有限公司（寓乐湾）成立于2013年8月，是新东方在线、中文在线文化教育产业基金、华清华和基金、沨华资本战略投资企业。</p>
+		  <p class='js_two'>作为STEAM跨学科学习课程及产品服务机构，寓乐湾不断开拓创新、自主研发，致力于为青少年科技创新教育提供整体性解决方案。作为教育部“未来学习”和STEM教育领域的课题研究单位，目前已面向5000多所中小学、为60多万中小学生提供课内及课外的创客教学及产品服务；同时寓乐湾在全国直营、加盟及合作办学校区超过200所，并且已经在加拿大和新加坡设立直营学校；寓乐湾与北京师范大学联合研发青少年创新能力大数据测评系统获得了国家三项权威认证，同时成为教育部推荐使用的中小学生创客与STEAM教学学科测评专用软件。
+		  寓乐湾成立以来已获得27项机器人、创客类产品专利技术，提供全面的不同年龄段、52大类、近千课时的青少年创客教育产品课程，与美国加州大学、北京航空航天大学、东南大学、泰国吞武里大学等合作推出了国内第一套k12阶段完整的创客教育教材及教学具。寓乐湾专注于青少年创新精神、创新能力和创新人格的教育和培养，并依托加州大学建立寓乐湾北美研发中心，与世界名校约克大学共建寓乐湾科技创新教育游学及研学基地。寓乐湾代表团在“APAR亚太青少年科技创新大赛国际赛”中多次斩获殊荣，连创佳绩。
+		  未来，寓乐湾在保持课程研发和教学运营能力稳步发展的同时，将进行全国性的扩张，打造STEAM跨学科学习课程及产品服务机构。</p>
+		  <a href="#">查看详情</a>
+	   </div>
+	  <div class='about_right'>
+		 <img src="images/a978916940b94be3a76589ea6f5e0043.png" alt="">
+	  </div>
+  </div>
+  </div>
+<!--新闻专题-->
+  <div id='news'>
+  <div class="ctrl_new">
+        <button title="上一张" class="prev_new"><</button>
+        <button title="下一张" class="next_new">></button>
+    </div>
+	<div class='middle'>
+	 <div class="sec_top ">
+					<h3 class="title01"><a href="#"><em class="f36">News Center</em>新闻中心</a></h3>
+						<a href="#" class="more01"><span>查看详情 </span></a>
+				</div>
+			<div class='new_list'>
+				<div class='clearfix'>
+					<ul id='new_ul'>
+						<!--<li class='list_active'>
+							<div class='news_one'>
+							<div id='middle'>
+								<p class="f16 news_date">09-05&nbsp;2018</p>
+								<h4 class="f18 news_tit"><a href="#">缺的就是你的才华！——首届“时代杯”中小学生研学创作大赛火热开启！</a></h4>
+								<div class="news_des">研学+写作，让你的创作丰富多彩现在首届“时代杯”中小学生研学创作大赛征文火热开启就是为了等待才华横溢的你！</div>
+								<a href="#" class='more_'>查看详情</a>
+							</div>
+						</div>
+						</li>
+
+						<li>
+							<div class='news_one'>
+								<div id='middle'>
+								<p class="f16 news_date">09-05&nbsp;2018</p>
+								<h4 class="f18 news_tit"><a href="#">缺的就是你的才华！——首届“时代杯”中小学生研学创作大赛火热开启！</a></h4>
+								<div class="news_des">研学+写作，让你的创作丰富多彩现在首届“时代杯”中小学生研学创作大赛征文火热开启就是为了等待才华横溢的你！</div>
+									<a href="#" class='more_'>查看详情</a>
+							</div>
+							</div>
+						</li>
+					<li>
+							<div class='news_one'>
+								<div id='middle'>
+								<p class="f16 news_date">09-05&nbsp;2018</p>
+								<h4 class="f18 news_tit"><a href="#">缺的就是你的才华！——首届“时代杯”中小学生研学创作大赛火热开启！</a></h4>
+								<div class="news_des">研学+写作，让你的创作丰富多彩现在首届“时代杯”中小学生研学创作大赛征文火热开启就是为了等待才华横溢的你！</div>
+									<a href="#" class='more_'>查看详情</a>
+							</div>
+							</div>
+						</li>
+						<li>
+							<div class='news_one'>
+								<div id='middle'>
+								<p class="f16 news_date">09-06&nbsp;2018</p>
+								<h4 class="f18 news_tit"><a href="#">缺的就是你的才华！——首届“时代杯”中小学生研学创作大赛火热开启！</a></h4>
+								<div class="news_des">研学+写作，让你的创作丰富多彩现在首届“时代杯”中小学生研学创作大赛征文火热开启就是为了等待才华横溢的你！</div>
+									<a href="#" class='more_'>查看详情</a>
+							</div>
+							</div>
+						</li>-->
+
+					</ul>
+				</div>
+		</div> 
+		</div>
+			<div class='middle'>
+				<div class='list'>
+					<a href="#"><em class="f36"><em class="f36">Main Business</em><p>主营业务</p></a>
+				</div>
+	</div>
+	</div>	
+<!--业务列表-->
+	<div class='middle'>
+		<div class='business_list'>
+			<ul>
+			<li id="info_one">
+				<div class='bg_one'>
+					<div class="business_info_one">
+						<div>
+							<h4 id='list_img'><a href="#"> <img src="images/business_ico01.png" alt="" > <p id='list_one'>校外业务</p></a></h4>
+							<a href="#"><span id='one'>查看详情</span></a>
+							</div>
+					</div>
+				</div>
+			</li>
+			<li id='info_two'>
+				<div class='bg_one'>
+					<div class="business_info_two">
+						<div>
+							<h4><a href="#"><img src="images/business_ico02.png" alt=""><p id='list_one'>校外业务</p></a></h4>
+							<a href="#"><span id='two'>查看详情</span></a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class='bg_one'>
+					<div class="business_info_three">
+						<div>
+							<h4><a href="#" style='color:black'><img src="images/business_ico03.png" alt=""><p >STEAM平台</p></a></h4>
+							<a href="#"><span id='three'>查看详情</span></a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id='info_four'><div class='bg_one'>
+				<div class="business_info_four">
+					<div>
+						<h4><a href="#"><img src="images/business_ico04.png" alt=""><p>青少年STEAM平台云测评</p></a></h4>
+						<a href="#"><span id='four'>查看详情</span></a>
+					</div>
+				</div>
+				</div>
+			</li>
+			<li><div class='bg_one'>
+				<div class="business_info_six">
+					<div>
+						<h4><a href="#"><img src="images/business_ico05.png" alt=""><p>师资培训</p></a></h4>
+						<a href="#"><span id='six'>查看详情</span></a>
+					</div>
+				</div>
+				</div>
+			</li>
+			<li>
+				<div class="business_info_seven">
+					<div>
+						<h4><a href="#"><img src="images/business_ico06.png" alt=""><p>家庭业务</p></a></h4>
+						<a href="#"><span id='seven'>查看详情</span></a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="business_info_eight">
+					<div>
+						<h4><a href="#"><img src="images/business_ico07.png" alt=""><p>赛事活动</p></a></h4>
+						<a href="#"><span id='eight'>查看详情</span></a>
+					</div>
+				</div>
+				
+			</li>
+			<li><div class='bg_one'>
+				<div class="business_info_nine">
+					<div>
+						<h4><a href="#"><img src="images/4dbf4178ca1a4e89b5bdcf9e6b177d76.jpg" alt=""></a></h4>
+						<a href="#"><span></span></a>
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+ </div>
+
+	 <div id='foot_img'>
+	 <img src="./images/722d27b54920473f86688e72b4665c3c.jpg" width=100%;  height=165px; alt="">
+	 </div>
+ </div>
+	<div class='middle'>
+			 <div class="sec_top ">
+					<h3 class="title01 " ><a href="#"  style='color:black;'><em class="f36">Honors</em>荣誉展示</a></h3>
+						<a href="#" class="more01"><span>查看详情 </span></a>
+				</div>
+				</div>
+		<div class='honors_list'>
+		<div class='middle'>
+			<div id="list_ul_honors">
+				<ul class="list_honors">
+					<li><a href="#">
+					<img src="./images/4e2656f8140b49789d6e745d38116f56.jpg" width="245" height="340" alt="">
+						<div class="honor_txt">
+							<span>2015中国品牌影响力教育机构</span>
+
+						</div>
+					</a>
+
+					</li>
+					<li><a href="#">
+					<img src="./images/6f59e6f7d8164b64831eb3c16796646f.jpg" alt="" width="245" height="340" />
+						<div class="honor_txt">
+							<span>2015中国品牌影响力教育机构</span>
+
+						</div>
+					</a></li>
+					<li><a href="#">
+					<img src="./images/155a9133d9e64f8cbe25b75b87559897.jpg" alt="" width="245" height="340" />
+						<div class="honor_txt">
+							<span>2015中国品牌影响力教育机构</span>
+
+						</div>
+					</a></li>
+					<li><a href="#">
+					<img src="./images/83954c35cf494ddcbcaeaa4fcbad659f.jpg" alt="" width="245" height="340" />
+						<div class="honor_txt">
+							<span>2015中国品牌影响力教育机构</span>
+
+						</div>
+					</a></li>
+					<li><a href="#">
+					<img src="./images/honors_01.jpg" alt="" width="245" height="340" />
+						<div class="honor_txt">
+							<span>2015中国品牌影响力教育机构</span>
+
+						</div>
+					</a></li>
+					<li><a href="#">
+					<img src="./images/hour.jpg" alt="" width="245" height="340" />
+						<div class="honor_txt">
+							<span>2015中国品牌影响力教育机构</span>
+
+						</div>
+					</a></li>
+			</ul>
+			</div>
+			<div style="" class="mCSB_draggerContainer">
+				<div id="mCSB_1_dragger_horizontal" class="mCSB_dragger">
+					<div class="mCSB_dragger_bar"></div>
+				</div>
+				<div class="mCSB_draggerRail"></div>
+			</div>
+		</div>
+		</div>
+	</div>
+		
+<!--课程-->
+<div class='course'>
+	<div class='middle'>
+		<div class="course_block_01">
+				<div class='Online'>
+						<h3>Online course</h3>
+							<h4>在线课程</h4>
+							<p class="my_font">点击链接可以查看课程</p>
+						<div class='btn'>
+							<button href="#" class='my_btn_left' disabled >←</button>
+							<button href="#" class='my_btn_right'>→</button>
+						</div>			
+					</div>
+		<!--<div class='course_one'>
+			<div class="course_one_img">
+				<img src="./images/8991a0bc17474d3e862445ca2887137c.jpg" alt=""/>
+			</div>
+			<div class="course_one_01">
+				<p class="my_font text_one" style='font-size:22px; font-weight:bold;'>创意写作课程之和爱丽丝一起做动作</p>
+				<span class="my_font">教师：王宁</span></span><span class="my_font">1课时</span><span>42人学习</span>
+			<div class='text_body_one'>
+				<p class="my_font">让人物行动起来，学会立体的动作架构。学生在领悟形象的动作描写中，掌握让人物活灵活现的要领和方法.</p>
+			</div>
+				<p><a href="#" class="course_more">查看课程</a></p>
+		</div>
+	</div>
+			<div class='course_one'>
+				<div class="course_one_img">
+					<img src="./images/8991a0bc17474d3e862445ca2887137c.jpg" alt=""/>
+				</div>
+				<div class="course_one_01">
+					<p class="my_font text_one" style='font-size:22px; font-weight:bold;'>创意写作课程之和爱丽丝一起做动作</p>
+					<span class="my_font">教师：王宁</span></span><span class="my_font">1课时</span><span>42人学习</span>
+					<div class='text_body_one'>
+						<p class="my_font">让人物行动起来，学会立体的动作架构。学生在领悟形象的动作描写中，掌握让人物活灵活现的要领和方法.</p>
+					</div>
+					<p><a href="#" class="course_more">查看课程</a></p>
+				</div>
+			</div>
+			<div class='course_one'>
+				<div class="course_one_img">
+					<img src="./images/8991a0bc17474d3e862445ca2887137c.jpg" alt=""/>
+				</div>
+				<div class="course_one_01">
+					<p class="my_font text_one" style='font-size:22px; font-weight:bold;'>创意写作课程之和爱丽丝一起做动作</p>
+					<span class="my_font">教师：王宁</span></span><span class="my_font">1课时</span><span>42人学习</span>
+					<div class='text_body_one'>
+						<p class="my_font">让人物行动起来，学会立体的动作架构。学生在领悟形象的动作描写中，掌握让人物活灵活现的要领和方法.</p>
+					</div>
+					<p><a href="#" class="course_more">查看课程</a></p>
+				</div>
+			</div>-->
+</div>
+
+<!--广告底部-->
+			<div class='anv'>
+				<a href="#">
+					<img src="./images/62a3df9566d54dffa61c014731edca23.jpg "alt="" />
+				</a>
+			</div>
+		</div>
+</div>
+<div class="waveWrapperInner bgMiddle">
+		<div class="wave waveMiddle" style="background-image: url('/images/wave-mid.png')"></div>
+</div>
+<div class='footer_bottom' style='display:none'>
+	<div class='middle_01'>
+		<div class='footer_body'>
+			<div class='footer'>
+				<img src="./images/d442f703d4044cf9b45d90d322fa507c.png" width="310" height="110" alt="" class="footer_logo">
+			<div class='nav_a'>
+				<a href="#" class="bds_sqq th_qq"  title="分享到QQ好友"><img src="./images/shared_ico01.png" alt="" /></a>
+				<a href="#" class="bds_weixin th_weixin" title="分享到微信"><img src="./images/shared_ico02.png" alt="" /></a>
+				<a href="#" class="bds_tsina th_sina" title="分享到新浪微博"><img src="./images/shared_ico03.png" alt="" /></a>
+			</div>
+			<div class='foot'>
+				<p>客服热线：</p>
+				<div class='foot_nav_info'>
+				<span class='foot_phone'></span>	
+				<span class="foot_phone01">400-870-8068</span>
+			</div>
+		</div>
+	</div>
+	<div class='foot_img'>
+			<div class='foot_img_01'>
+				<img src="./images/7a11a30b0262440abe644f050e3773f1.jpg" width="132" height="132" alt="">
+				<p>寓乐湾官方公众号</p>
+	</div>
+	<div class='foot_img_02'>
+		<img src="./images/a6c2bb08660f41dfbb6393f9b2828331.jpg" width="132" height="132" alt="">
+		<p>石斧创客公众号</p>
+	</div>
+	<div>
+		<img src="./images/71c2a623e5144fce99edd4afdfd30181.jpg" width="132" height="132" alt="">
+		<p>师资培训平台公众号</p>
+	</div>
+</div>
+			<div class="ask_form">
+						<div class='ask_01'>
+							<h4 class="footer_item">在线咨询：</h4>
+							<input type="button" value='提交' onclick='login()' class='button'>
+						
+					</div>
+								<div class="form_line line_dif">
+										<input type="text" placeholder="输入您的姓名" class="form_txt" id="uname" name='uname'>
+										<input type="text" placeholder="输入您的联系方式" class="form_txt" id="phone" name='phone'>
+								</div>
+								<div class="form_line"><input type="text" placeholder="输入您的邮箱" class="Email" id="email"  name='email'></div>
+								<textarea class="form_txt form_yu" placeholder="输入您的咨询问题" id="text" name='text'></textarea>
+						</div>
+			</div>
+		</div>
+	
+		</div>
+		<div class="inner" ><p >Copyright ©2013 北京寓乐世界教育科技有限公司　  京ICP备14056452号-6　 技术支持：<a href="#" target="_blank">华昊联合</a></p>
+	 </div>
+	
+   
+         
+		<script>
+		function login(){
+			var xhr=createXhr();
+			xhr.onreadystatechange=function(){
+			if(xhr.readyState==4 && xhr.status==200){
+					var result=xhr.responseText
+					console.log(result);
+					alert('ok');
+				}
+			}
+			xhr.open('post','/user/login',true);
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+			var uname=$('uname').value;
+			var phone=$('phone').value;
+			var email=$('email').value;
+			var text=$('text').value;
+			xhr.send("uname="+uname+"&phone="+phone+'&email='+email+'&text='+text);
+		}
+		
+	
+		</script>
+ </body>
+</html>

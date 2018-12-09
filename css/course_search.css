@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+}
+.header-container{
+    margin: 0 auto;
+    height: 115px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 260px;
+    height: 115px;
+
+}
+.logo a img {
+    width: 100%;
+    height: 100%;
+}
+.header-menu{
+    margin: 45px 0px;
+
+}
+.header-menu ul{
+    list-style: none;
+}
+.header-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header-menu ul li {
+    float: left;
+    margin: 0px 10px;
+    list-style: none;
+    line-height: 25px;
+    cursor: pointer;
+}
+.header-search{
+    height: 60px;
+    margin-top: 60px;
+}
+.header-search select{
+    width: 60px;
+    height: 30px;
+    border: solid 1px #dbdbdb;
+    appearance: none;
+    padding: 4px;
+}
+.header-search .search-kw {
+    overflow: hidden;
+    line-height: 28px;
+    width: 180px;
+    border: solid 1px #dbdbdb;
+    margin-left: -5px;
+    text-indent: 5px;
+    font-size: 12px;
+}
+.user-action{
+    overflow: hidden;
+    margin: 60px 0px 0px 30px;
+}
+.user-action a {
+    text-decoration: none;
+    color: black;
+}
+.body_about{
+    width:1200px;
+    margin: 0 auto;
+}
+.course-all{
+    list-style: none;
+}
+.course-all li{
+    display:inline-block;
+
+}
+.area-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.course-all li a{
+    text-decoration: none;
+    color:black
+}
+.tools{
+    display: flex;
+    background: #f5f5f5;
+}
+.tools div{
+    vertical-align: middle;
+    margin: 0 15px;
+    padding: 15px 0;
+}
+.split-line{
+    border-right: 1px solid #ccc;
+    height: 35px;
+    margin: 0 20px;
+}
+.tools-syn{
+    display: flex;
+    border: 1px solid floralwhite;
+}
+.tools-syn div{
+    vertical-align: middle;
+    margin: 0 15px;
+    padding: 15px 0;
+}
+.course-body{
+    width:70%;
+    margin:0 auto;
+}
+.course-live{
+    background: url(../images/live-icon.png) no-repeat;
+    text-indent: 35px;
+    display: block;
+    float: left;
+    font-size: 24px;
+}
+.course-title{
+    font-size: 20px;
+    font-family: Cambria;
+    font-style: italic;
+    padding-left: 10px;
+    color: #e7e7e7;
+}
+.page{
+    padding: 20px 0;
+    background: lightskyblue;
+    text-align: center;
+    width:1400px;
+    margin: auto;
+    height:50px;
+    display: flex;
+    justify-content:center;
+    align-items:Center
+}
+.page_item a{
+    border: 1px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    width:40px;
+}
+.page button{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: none;
+    padding: 6px ;
+    margin:10px;
+}
+.active{
+    background: #2bc3cf;
+    border: 1px solid rgba(43,195,207,1);
+    color: #fff;
+}
+.course-list{
+    list-style: none;
+    width:1200px;
+margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.course-list li{
+    width:25%;
+    background: #cccccc;
+    padding: 10px;
+    margin-right: 20px;
+    position: relative;
+    margin-top:20px;
+}
+.tool-course-type {
+    position: absolute;
+    top: 12px;
+    background: #ff8000;
+    opacity: 1;
+    right: 12px;
+    color: #fff;
+    padding: 0px 2px;
+}
+.course-list li img{
+    width:100%;
+}
+.course-name{
+    font-size: 14px;
+    display: block;
+    float: left;
+    padding-top: 15px;
+    width: 75%;
+    height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+
+}
+.course-end{
+    background-color: #55d0fc !important;
+    border: 1px solid #55d0fc;
+    margin-top: 13px;
+    float: right;
+    display: block;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 2px;
+
+}
+.course-price{
+    clear: both;
+    float: left;
+    padding-top: 10px;
+    color: #eb5a11;
+    font-weight: 700;
+    width: 100%;
+    margin: 0;
+}
+.footer{
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    color: #fff;
+    text-align: center;
+    background-color: #444;
+}
+.footer-title a{
+    text-decoration: none;
+    color:white;
+}

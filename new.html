@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name='viewport' content="width=device-width,initial-scale=1.0">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>寓乐湾</title>
+    <link rel="stylesheet" href="css/new.css">
+    <script src='js/common.js'></script>
+    <script src='js/jquery-1.11.3.js'></script>
+    <script src='js/news.js'></script>
+    <style type="text/css">
+
+        .my_left{
+            position:fixed	;
+            top:50%;
+            right:0;
+            z-index:2
+        }
+        .close{
+            position:absolute	;
+            top:56%;
+            left:-15.6%;
+            z-index:2;
+            cursor:pointer;
+        }
+        #left_a{
+            width:148px;
+            background:rgb(41,104,175)
+        }
+        #left_a a{
+            width:70px;
+            display:block;
+            border:1px solid white;
+            border-radius: 30px;
+            font-size:10px;;
+            text-align:center;
+            margin:0 auto;
+            background: rgb(193,218,244);
+            color:rgb(51,144,160);
+            background-image:url('./images/icon.png');
+            background-position: -400px 6px;
+        }
+    </style>
+</head>
+<body>
+<div class='my_left'>
+    <div  id='open'>
+        <img src="./images/14 .png" alt="" />
+        <img src="./images/14_left.png" alt="" class='close'/>
+        <div id='left_a'>
+            <a href="#">门店加盟</a>
+            <a href="#">校内装备</a>
+        </div>
+    </div>
+    <div id='close' style='display:none'>
+        <img src="./images/14_close.png" alt="" />
+    </div>
+</div>
+</div>
+<!--头部导航布局-->
+<div id='table'>
+    <div id='logo'>
+        <img src="./images/logo.png" alt="" >
+    </div>
+    <nav  id='nav_right'>
+        <ul class='nav_one' >
+            <li id='q1'><a href="#" class='index'>首页</a></li>
+            <li>
+                <a href="#" class="a_item0" >关于我们</a>
+                <div class="down_menu" style='display:none'>
+                    <div class="down_menu_block" >
+                        <div class="nav_class">
+                            <a href="#" >公司简介</a>
+                            <a href="#" >发展历程</a>
+                            <a href="#" >合作伙伴</a>
+                            <a href="#" >中国创客教育联盟</a>
+                            <a href="#" >国际创客教育研究院</a>
+                            <a href="#" >联系我们</a>
+                        </div>
+                        <p class="f28 tel_400"><img src="images/ico_02.png" width="44" height="44" alt="">400-870-8068</p>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" class="a_item0">新闻中心</a></li>
+            <li>
+                <a href="#" class="a_item0">产品课程</a>
+                <div class="down_menu"style='display:none'>
+                    <div class="down_menu_block">
+                        <div class="nav_class">
+                            <a href="#" class="a_item1" data-toggle="#item1">校外业务</a>
+                            <a href="#" class="a_item1" data-toggle="#item2">校内业务</a>
+                            <a href="#" class="a_item1" data-toggle="#item3">steam平台</a>
+                            <span class="nav_class_one " id='item1' style='display:none'>
+							<a href="#">寓乐湾科技体验中心</a>
+							<a href="#">寓乐优学</a>
+						</span>
+                            <span class="nav_class_one " id='item2' style='display:none'>
+							<a href="#">科技创新实验室</a>
+							<a href="#">校园创客空间</a>
+							<a href="#">幼儿科学发展与探究实训室</a>
+							<a href="#">校外教育基地</a>
+							<a href="#">课外增值业务</a>
+						</span>
+                            <span class="nav_class_one " id='item3' style='display:none'>
+							<a href="#">青少年STEAM平台云</a>
+							<a href="#">STEAM智能云课程</a>
+						</span>
+
+                            <a href="#" class="a_item1" data-toggle="#item4">青少年智能云测评平台</a>
+                            <a href="#" class="a_item1" data-toggle="#item5">师资培训</a>
+                            <a href="#" class="a_item1" data-toggle="#item6">家庭业务</a>
+                            <a href="#" class="a_item1" data-toggle="#item7">赛事活动</a>
+                            <span class="nav_class_one " id='item7' style='display:none'>
+							<a href="#">APAR亚太青少年科技创新大赛</a>
+							<a href="#">创意写作</a>
+							<a href="#">研学银行</a>
+						</span>
+                        </div>
+                        <p class="f28 tel_400"><img src="images/ico_02.png" width="44" height="44" alt="">400-870-8068</p>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" class="a_item0">招商加盟</a></li>
+            <li><a href="#" class="a_item0">APAR大赛</a></li>
+            <li><a href="#" class="a_item0">STEAM平台</a>
+                <div class="down_menu " style='display:none'>
+                    <div class="down_menu_block" >
+                        <div class="nav_class">
+                            <a href="#" class="a_item1">steam平台</a>
+                            <a href="#" class="a_item1">Steam云平台</a>
+                        </div>
+                        <p class="f28 tel_400"><img src="images/ico_02.png" width="44" height="44" alt="">400-870-8068</p>
+            </li>
+            <li><a href="#">名师团队</a></li>
+            <li><a href="#">各地分校</a></li>
+            <li><a href="#">招贤纳士</a></li>
+            <li id='li_10'>|</li>
+            <li ><span id='tel'>400-870-8068</span></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="banner" >
+        <ul class='solider'>
+            <li><img src="./images/b5da4a731c7340959fc048e0223e05f6.jpg" id='first'/></li>
+        </ul>
+</div>
+
+<!--新闻-->
+    <div class="news middle">
+        <ul class="news_list">
+            <!-- <li>
+                 <a href="#" class="news_img"><img src="./images/41f8dc1dca7b4b8a8d36a7d5cf148e9d.jpg" width="357" height="268" alt=""></a>
+                 <div id="news_move">
+                 <div class="news_body">
+                     <div class="news_time">
+                         <span ><b class="f46">10</b></span>
+                         <p>oct,2018</p>
+                     </div>
+                     <div class="news_container">
+                         <h4 style="color:black;margin-top: 15px;"><a href="#" style="color:black;margin-top: 5px;">「重磅！」寓乐湾与加拿大环球国际高中Global Education Academy达成战略合作！</a></h4>
+                         <p>10月11日，北京寓乐世界教育科技有限公司（简称：寓乐湾）与加拿大环球国际高中Global Education Academy成功签署战略合作协议。
+                             加拿大环球国际高中Global Education Academy 总裁James Song、寓乐湾CEO刘斌立等双方领导共同出席了此次签约仪式。...</p>
+                     </div>
+                             <div style="margin:0 auto;   border-bottom: 1px solid black;"></div>
+                     <h6 class="more">More</h6>
+                     <div class="news_href"></div>
+                 </div>
+                 </div>
+                 <div id="triangle-left"></div>
+             </li>-->
+         </ul>
+     </div>
+     <div class=" page">
+<button class="btn_prev">上一页</button>
+         <div class="page_item"> </div>
+        <button  class="btn_next">下一页</button>
+
+
+        </div>
+ <!--下部布局-->
+
+<div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('/images/wave-mid.png')"></div>
+</div>
+<div class='footer_bottom' style='display:none'>
+    <div class='middle_01'>
+        <div class='footer_body'>
+            <div class='footer'>
+                <img src="./images/d442f703d4044cf9b45d90d322fa507c.png" width="310" height="110" alt="" class="footer_logo">
+                <div class='nav_a'>
+                    <a href="#" class="bds_sqq th_qq"  title="分享到QQ好友"><img src="./images/shared_ico01.png" alt="" /></a>
+                    <a href="#" class="bds_weixin th_weixin" title="分享到微信"><img src="./images/shared_ico02.png" alt="" /></a>
+                    <a href="#" class="bds_tsina th_sina" title="分享到新浪微博"><img src="./images/shared_ico03.png" alt="" /></a>
+                </div>
+                <div class='foot'>
+                    <p>客服热线：</p>
+                    <div class='foot_nav_info'>
+                        <span class='foot_phone'></span>
+                        <span class="foot_phone01">400-870-8068</span>
+                    </div>
+                </div>
+            </div>
+            <div class='foot_img'>
+                <div class='foot_img_01'>
+                    <img src="./images/7a11a30b0262440abe644f050e3773f1.jpg" width="132" height="132" alt="">
+                    <p>寓乐湾官方公众号</p>
+                </div>
+                <div class='foot_img_02'>
+                    <img src="./images/a6c2bb08660f41dfbb6393f9b2828331.jpg" width="132" height="132" alt="">
+                    <p>石斧创客公众号</p>
+                </div>
+                <div>
+                    <img src="./images/71c2a623e5144fce99edd4afdfd30181.jpg" width="132" height="132" alt="">
+                    <p>师资培训平台公众号</p>
+                </div>
+            </div>
+            <div class="ask_form">
+                <div class='ask_01'>
+                    <h4 class="footer_item">在线咨询：</h4>
+                    <input type="button" value='提交' onclick='login()' class='button'>
+
+                </div>
+                <div class="form_line line_dif">
+                    <input type="text" placeholder="输入您的姓名" class="form_txt" id="uname" name='uname'>
+                    <input type="text" placeholder="输入您的联系方式" class="form_txt" id="phone" name='phone'>
+                </div>
+                <div class="form_line"><input type="text" placeholder="输入您的邮箱" class="Email" id="email"  name='email'></div>
+                <textarea class="form_txt form_yu" placeholder="输入您的咨询问题" id="text" name='text'></textarea>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="inner" ><p >Copyright ©2013 北京寓乐世界教育科技有限公司　  京ICP备14056452号-6　 技术支持：<a href="#" target="_blank">华昊联合</a></p>
+</div>
+
+
+
+<script>
+    function login(){
+        var xhr=createXhr();
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4 && xhr.status==200){
+                var result=xhr.responseText
+                console.log(result);
+                alert('ok');
+            }
+        }
+        xhr.open('post','/user/login',true);
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        var uname=$('uname').value;
+        var phone=$('phone').value;
+        var email=$('email').value;
+        var text=$('text').value;
+        xhr.send("uname="+uname+"&phone="+phone+'&email='+email+'&text='+text);
+    }
+
+
+</script>
+</body>
+</html>
